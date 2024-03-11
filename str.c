@@ -55,7 +55,7 @@ int main() {
 
     char userSentence[100];
 
-    print("Please enter a sentence:");
+    printf("Please enter a sentence:");
     fgets(userSentence, sizeof(userSentence), stdin);
     userSentence[strcspn(userSentence, "\n")] = '\0';
 
