@@ -27,5 +27,23 @@ void reverseWordsInSentence(char *sentence) {
         start++;
         end--;
     }
+
+    int wordStart = 0;
+    int wordEnd = 0;
+    while (wordStart < length) {
+        while (sentence[wordEnd] !='' && sentence[wordEnd] !='\0'){
+            wordEnd++;
+        }
+
+        int i = wordStart;
+        int j = wordEnd - 1;
+        while (i<j){
+            char temp = sentence[i];
+            sentence[i] = sentence[j];
+            sentence[j] = temp;
+            i++;
+            j--;
+        }
+    }
     
 }
