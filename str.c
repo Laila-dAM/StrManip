@@ -52,4 +52,10 @@ void reverseWordsInSentence(char *sentence) {
 }
 int main() {
     setlocale(LC_ALL,"en_US");
+
+    char userSentence[100];
+
+    print("Please enter a sentence:");
+    fgets(userSentence, sizeof(userSentence), stdin);
+    userSentence[strcspn(userSentence, "\n")] = '\0';
 }
