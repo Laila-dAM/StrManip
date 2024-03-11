@@ -58,4 +58,12 @@ int main() {
     print("Please enter a sentence:");
     fgets(userSentence, sizeof(userSentence), stdin);
     userSentence[strcspn(userSentence, "\n")] = '\0';
+
+    replaceCharInString(userSentence, '', '_');
+    printf("Modified sentence with spaces replaced by underscores: %s\n", userSentence);
+
+    reverseWordsInSentence(userSentence);
+    printf("Sentence with reversed words: %s\n", userSentence);
+
+    return 0;
 }
