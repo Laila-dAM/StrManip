@@ -44,6 +44,12 @@ void reverseWordsInSentence(char *sentence) {
             i++;
             j--;
         }
+
+        wordStart = wordEnd + 1;
+        wordEnd = wordStart;
     }
     
+}
+int main() {
+    setlocale(LC_ALL,"en_US");
 }
